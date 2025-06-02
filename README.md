@@ -33,13 +33,8 @@ Incluye limpieza profunda de datos, imputación estadística avanzada, visualiza
 3. **Horarios nocturnos y zonas céntricas**: mayor precio por kilómetro recorrido
 4. **Outliers climáticos**: los viajes en condiciones extremas presentan precios erráticos
 
-## Hipótesis de Negocio Evaluadas
-| Hipótesis                                                              | Método de Validación                 |
-|------------------------------------------------------------------------|--------------------------------------|
-| Zona + horario afecta rentabilidad                                     | ANOVA bidireccional (zona × hora)   |
-| Alta demanda eleva precio/km                                           | Correlación Spearman                |
-| Mayor espera reduce eficiencia                                         | Regresión y correlación negativa    |
-| Hay franjas horarias más rentables que otras                          | Kruskal-Wallis + test de Dunn       |
+## Modelos Utilizados
+
 
 ## Exploración Visual
 🔗 Dashboard
