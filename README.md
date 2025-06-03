@@ -31,7 +31,10 @@ Incluye limpieza profunda de datos, imputación estadística avanzada, visualiza
       - Zonificación mediante la API de Google Maps, que permitió asignar una zona (distrito) a cada punto de inicio y fin de viaje a partir de latitud y longitud
 
 ## Hallazgos Principales
-Se rechazaron tres de las cuatro hipótesis nulas planteadas. Para la Hipótesis 1, se confirmó que la combinación de zona y franja horaria influye significativamente en la rentabilidad del viaje (p < 0.001). La Hipótesis 2 también fue validada: el precio por kilómetro es mayor en zonas de alta demanda (p < 0.001). La Hipótesis 4 fue confirmada, mostrando diferencias de rentabilidad según la hora del día (p < 0.001). En cambio, no se rechazó la Hipótesis 3, ya que no se encontró una relación significativa entre el tiempo de espera y el precio del viaje (p = 0.667).
+- Se confirmó que los precios promedio son significativamente mayores en horas pico, especialmente durante la mañana, en comparación con la madrugada.
+- Se encontró que el tiempo de espera varía significativamente entre los días de la semana, indicando fluctuaciones en la eficiencia del servicio.
+- La rentabilidad promedio por minuto de servicio difiere significativamente según la combinación zona × franja horaria, lo que revela oportunidades para optimización operativa.
+- Se validó que las zonas de alta demanda tienden a cobrar un precio por kilómetro más alto (p ≈ 0.045), lo que sugiere menor sensibilidad al precio o mayor disposición a pagar en esos distritos.
 
 ## Modelos Utilizados
 Aplicamos un *modelo de gravedad* para estimar la cantidad de viajes entre zonas de Lima, en función de su nivel de actividad y la distancia entre ellas. Este enfoque permite predecir la demanda de movilidad y puede ser útil para optimizar la asignación de conductores en plataformas como Uber.
