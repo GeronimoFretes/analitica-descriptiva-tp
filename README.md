@@ -24,8 +24,11 @@ Incluye limpieza profunda de datos, imputación estadística avanzada, visualiza
 ## Procesamiento de Datos
 - Eliminación de columnas derivadas o redundantes
 - Detección y reemplazo de valores atípicos
-- Cálculo de nuevas métricas (`trip_calc`, `wait_calc`)
-- Imputación de `price` con el algoritmo **MICE** (paquete `miceforest`) tras análisis de significancia y multicolinealidad
+- Cálculo de nuevas métricas (trip_calc, wait_calc)
+- Imputación de price con el algoritmo MICE (paquete miceforest) tras análisis de significancia y multicolinealidad
+- Enriquecimiento del dataset con información externa:
+      - Datos meteorológicos (viento, temperatura, precipitación) extraídos por coordenadas usando variables como u10, v10, tp y tcc
+      - Zonificación mediante la API de Google Maps, que permitió asignar una zona (distrito) a cada punto de inicio y fin de viaje a partir de latitud y longitud
 
 ## Hallazgos Principales
 1. **Zona + horario**: la combinación espacial-temporal influye significativamente en la eficiencia del viaje
@@ -33,16 +36,11 @@ Incluye limpieza profunda de datos, imputación estadística avanzada, visualiza
 3. **Horarios nocturnos y zonas céntricas**: mayor precio por kilómetro recorrido
 4. **Outliers climáticos**: los viajes en condiciones extremas presentan precios erráticos
 
-## Hipótesis de Negocio Evaluadas
-| Hipótesis                                                              | Método de Validación                 |
-|------------------------------------------------------------------------|--------------------------------------|
-| Zona + horario afecta rentabilidad                                     | ANOVA bidireccional (zona × hora)   |
-| Alta demanda eleva precio/km                                           | Correlación Spearman                |
-| Mayor espera reduce eficiencia                                         | Regresión y correlación negativa    |
-| Hay franjas horarias más rentables que otras                          | Kruskal-Wallis + test de Dunn       |
+## Modelos Utilizados
+Aplicamos un *modelo de gravedad* para estimar la cantidad de viajes entre zonas de Lima, en función de su nivel de actividad y la distancia entre ellas. Este enfoque permite predecir la demanda de movilidad y puede ser útil para optimizar la asignación de conductores en plataformas como Uber.
 
 ## Exploración Visual
-🔗 Dashboard
+Dashboard adjuntado al repositorio como Uber_Peru_2010.pbix
 
 ---
 
