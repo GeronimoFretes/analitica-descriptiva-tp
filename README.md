@@ -40,7 +40,7 @@ Incluye limpieza profunda de datos, imputación estadística avanzada, visualiza
 Aplicamos un *modelo de gravedad* para estimar la cantidad de viajes entre zonas de Lima, en función de su nivel de actividad y la distancia entre ellas. Este enfoque permite predecir la demanda de movilidad y puede ser útil para optimizar la asignación de conductores en plataformas como Uber.
 
 ## Exploración Visual
-🔗 Dashboard
+🔗 https://github.com/GeronimoFretes/analitica-descriptiva-tp/blob/main/Uber_Peru_2010.pbix
 
 ---
 
