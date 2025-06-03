@@ -1,5 +1,6 @@
 # 🚗 Análisis Exploratorio de Viajes en Uber - Lima 
 
+## Presentación del TP - Link a canva: https://www.canva.com/design/DAGpDdtC3YI/AJRk-RocXl32Q2szMvzTvw/edit
 ## Contexto
 Este proyecto analiza datos de viajes realizados en Uber en la ciudad de Lima. El objetivo es identificar las **zonas y franjas horarias más eficientes** desde el punto de vista del negocio, maximizando la rentabilidad tanto para los conductores como para la plataforma.
 
